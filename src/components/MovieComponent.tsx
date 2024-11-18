@@ -8,7 +8,7 @@ interface IProps {
 const MovieComponent: FC<IProps> = ({movie }) => {
     return (
         <div>
-            <Link href={`/movies/${movie.id}`}>{movie.id}:{movie.name}</Link>
+            <Link href={`/movies/${movie.id}`}>{movie.id}:{movie.id}</Link>
         </div>
     );
 };

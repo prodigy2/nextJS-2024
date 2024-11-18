@@ -4,12 +4,12 @@ import {movieService} from "@/services/api.movie.service";
 
 
 export const generateMetadata = async ({params}: {params: {id: string} }): Promise<Metadata> => {
-    const movie  = await movieService.GetServerSideProps( params.id);
+    const movie  = await movieService.getMovieById( params.id);
     console.log(movie);
     return {title: 'movie?.title'}
 }
 type Props = { children: React.ReactNode }
-const UserLayout = ({children}: Props) => {
+const MovieLayout = ({children}: Props) => {
     return (
         <div>
             {children}
@@ -17,4 +17,4 @@ const UserLayout = ({children}: Props) => {
     );
 };
 
-export default UserLayout;
+export default MovieLayout;

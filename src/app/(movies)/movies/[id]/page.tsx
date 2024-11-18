@@ -3,10 +3,10 @@ import {movieService} from "@/services/api.movie.service";
 
 type Params = { id: string };
 const MoviePage = async ({params}: {params: Params}) => {
-    const movie = await movieService.GetPopular( params.id);
+    const movie = await movieService.getMovieById( params.id);
     return (
         <div>
-            {movie?.id} : {user?.title}
+            {movie?.title} : {movie?.id}
             <hr/>
             <hr/>
             {JSON.stringify(movie)}
@@ -14,4 +14,4 @@ const MoviePage = async ({params}: {params: Params}) => {
     );
 };
 
-export default movieService;
+export default MoviePage;
