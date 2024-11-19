@@ -12,6 +12,9 @@ const MenuComponent = () => {
                 <li>
                     <NavLinkClientComponent path={'/movies'}>movies</NavLinkClientComponent>
                 </li>
+                                <li>
+                                    <NavLinkClientComponent path={'/series'}>series</NavLinkClientComponent>
+                                </li>
                 <li>
                     <NavLinkClientComponent path={'/search'}>search</NavLinkClientComponent>
                 </li>
