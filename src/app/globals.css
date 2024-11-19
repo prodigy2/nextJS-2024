@@ -55,10 +55,22 @@ h2 {
   margin: 0 0 10px;
 }
 
-.grid {
-  gap: 16px;
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colonne */
+  gap: 16px; /* Distanza tra le colonne */
 }
 
 img {
-  border-radius: 8px;
+  border-radius: 4px;
+}
+
+.movie-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  transition: box-shadow 0.3s ease; /* Transizione fluida per l'ombra */
+}
+
+.movie-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombra al passaggio del mouse */
 }

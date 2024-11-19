@@ -15,9 +15,7 @@ const MenuComponent = () => {
                 <li>
                     <NavLinkClientComponent path={'/search'}>search</NavLinkClientComponent>
                 </li>
-                <li>
-                    <NavLinkClientComponent path={'/users'}>users</NavLinkClientComponent>
-                </li>
+
 
 
             </ul>
